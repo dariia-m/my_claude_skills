@@ -16,5 +16,6 @@ The folders in this repo only include the skills I created personally. However, 
 - [K Dense AI Claude scientific skills](https://github.com/K-Dense-AI/claude-scientific-skills)
 - [Behi Secc Awesome Claude skills](https://github.com/BehiSecc/awesome-claude-skills)
 - [Research companion by Andre Huang](https://github.com/andrehuang/research-companion/tree/main)
+- [Crossref skill by Jukka Sihvonen](https://github.com/jusi-aalto/crossref)
 
 TBC...
