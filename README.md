@@ -17,5 +17,6 @@ The folders in this repo only include the skills I created personally. However, 
 - [Behi Secc Awesome Claude skills](https://github.com/BehiSecc/awesome-claude-skills)
 - [Research companion by Andre Huang](https://github.com/andrehuang/research-companion/tree/main)
 - [Crossref skill by Jukka Sihvonen](https://github.com/jusi-aalto/crossref)
+- [Literature helper Polisci by Jason Lian Jie](https://github.com/LIANJie-Jason/literature-helper-polsci)
 
 TBC...
