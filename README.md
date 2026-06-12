@@ -18,5 +18,5 @@ The folders in this repo only include the skills I created personally. However, 
 - [Research companion by Andre Huang](https://github.com/andrehuang/research-companion/tree/main)
 - [Crossref skill by Jukka Sihvonen](https://github.com/jusi-aalto/crossref)
 - [Literature helper Polisci by Jason Lian Jie](https://github.com/LIANJie-Jason/literature-helper-polsci)
-
+- [Revise Applied paper by Noe J Nava](https://github.com/noejn2/revise-applied-paper)
 TBC...
