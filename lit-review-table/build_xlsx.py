@@ -18,7 +18,8 @@ from openpyxl.utils import get_column_letter
 
 STANDARD = ["authors", "year", "title", "journal", "full_citation", "keywords",
             "abstract", "citation_count", "paper_type", "oa_status", "link"]
-INTERNAL = {"doi", "source_type", "type", "volume", "issue", "pages", "is_oa", "pdf_candidates"}
+INTERNAL = {"doi", "source_type", "type", "volume", "issue", "pages", "is_oa", "pdf_candidates",
+            "source", "fields", "external"}  # provenance/helper keys, never table columns
 WIDTHS = {"authors": 26, "year": 6, "title": 46, "journal": 26, "full_citation": 52,
           "keywords": 30, "abstract": 62, "citation_count": 9, "paper_type": 18,
           "oa_status": 11, "link": 42}

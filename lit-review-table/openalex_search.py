@@ -86,6 +86,13 @@ def parse_work(w):
         "pdf_candidates": pdfs,
     }
 
+def by_title(title, n=3):
+    """Fetch a specific known paper by title (filter=title.search is far more precise than
+    the relevance `search` param). Returns the top matches as parsed records."""
+    f = urllib.parse.quote(title)
+    d = get_json(f"{BASE}?filter=title.search:{f}&per-page={n}&mailto={MAILTO}")
+    return [parse_work(w) for w in d.get("results", [])]
+
 def search(query, n, econ_only, from_year, to_year, min_cites):
     filters = ["type:article|preprint|report"]
     if econ_only:
@@ -120,8 +127,11 @@ if __name__ == "__main__":
     ap.add_argument("--min-cites", type=int, default=None)
     ap.add_argument("--no-econ-filter", action="store_true",
                     help="drop the economics-concept filter (broader / adjacent fields)")
+    ap.add_argument("--by-title", action="store_true",
+                    help="treat the query as an exact paper title and fetch it (filter=title.search)")
     a = ap.parse_args()
-    recs = search(a.query, a.n, not a.no_econ_filter, a.from_year, a.to_year, a.min_cites)
+    recs = by_title(a.query, a.n) if a.by_title else \
+        search(a.query, a.n, not a.no_econ_filter, a.from_year, a.to_year, a.min_cites)
     txt = json.dumps(recs, ensure_ascii=False, indent=2)
     if a.out:
         open(a.out, "w", encoding="utf-8").write(txt)
