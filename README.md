@@ -1,6 +1,24 @@
 # Claude skills
 Here I share the Claude skills I created as well as links to some other useful repositories.
 
+## My skills
+
+| Skill | What it does |
+|---|---|
+| [abstract](abstract/) | Writing and revising the abstract of an economics paper |
+| [academic_writing](academic_writing/) | Drafting academic economics text from scratch, with structure, phrasing options and quality checks |
+| [code-walkthrough](code-walkthrough/) | Step-by-step walkthrough of a codebase that explains each section and runs it, showing real output |
+| [dont-lie](dont-lie/) | Always-on rules against fabricating functions, arguments, file paths, data or facts |
+| [econ_intro_writing](econ_intro_writing/) | Writing and revising the introduction of an economics paper |
+| [event-studies](event-studies/) | Event studies and difference-in-differences in R, from TWFE to staggered-adoption estimators, with diagnostics |
+| [lit-review-table](lit-review-table/) | Literature search via OpenAlex compiled into a formatted Excel table, with optional PDF downloads |
+| [naturalize-ukrainian](naturalize-ukrainian/) | Editing translated or AI-written Ukrainian so it reads naturally (calques, Russisms, AI markers) |
+| [paper_verification](paper_verification/) | Auditing a paper's tables, figures and numbers against its R code and outputs |
+| [power-calculations](power-calculations/) | Power, MDE and sample size in R for randomized and survey experiments, with formulas, simulations and tests |
+| [survey-experiment-check](survey-experiment-check/) | Referee-style evaluation of a survey experiment design before fielding |
+
+## Other useful skills
+
 The folders in this repo only include the skills I created personally. However, I use many other skills on day-to-day basis, created by other people/organizations. Some useful links:
 
 - [Anthropic skill library](https://github.com/anthropics/skills)
